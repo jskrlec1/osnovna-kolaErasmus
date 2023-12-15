@@ -6,7 +6,7 @@ function DvadesettriDoDvadesetčetiri() {
     <Container className="mt-5" style={{ backgroundColor: 'lightblue' }}>
       <div>
         <Row className="d-flex flex-column align-items-center text-center">
-          <div>
+        <div className="kretanje">
             <img
               src={`${process.env.PUBLIC_URL}/Logo Erasmus Akreditacija škola.png`}
               alt="Erasmus Akreditacija Logo"

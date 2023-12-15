@@ -3,18 +3,20 @@ import { Container, Row, Col } from "react-bootstrap";
 
 function DvadesettriDoDvadesetčetiri() {
   return (
-    <Container className="mt-5" style={{ backgroundColor: 'lightblue' }}>
+    <Container className="mt-5" style={{ backgroundColor: "lightblue" }}>
       <div>
         <Row className="d-flex flex-column align-items-center text-center">
-          <div>
+          <div className="kretanje">
             <img
               src={`${process.env.PUBLIC_URL}/Logo Erasmus Akreditacija škola.png`}
               alt="Erasmus Akreditacija Logo"
               style={{ maxWidth: "20%", height: "auto" }}
             />
           </div>
-          <div style={{ backgroundColor: 'red' }}>
+          <div style={{ backgroundColor: "red" }}>
             <h1 className="mb-5">Osnovna škola Vladimira Nazora, Vinkovci</h1>
+          </div>
+          <div className="trenutak-tranzicije">
             <h2 className="mb-4">ERASMUS+ AKREDITACIJA</h2>
             <h3 className="mb-5">2023. - 2027.</h3>
           </div>
@@ -22,7 +24,7 @@ function DvadesettriDoDvadesetčetiri() {
       </div>
 
       <Row className="mb-5">
-      <div style={{ border: "2px solid black", padding: "10px" }}>
+        <div style={{ border: "2px solid black", padding: "10px" }}>
           <h3> Mobilnosti učitelja:</h3>
           <ul>
             <li>1</li>
@@ -32,7 +34,7 @@ function DvadesettriDoDvadesetčetiri() {
         </div>
       </Row>
       <Row className="mb-5">
-      <div style={{ border: "2px solid black", padding: "10px" }}>
+        <div style={{ border: "2px solid black", padding: "10px" }}>
           <h3>Mobilnosti učenika:</h3>
           <ul>
             <li>1</li>
@@ -42,7 +44,7 @@ function DvadesettriDoDvadesetčetiri() {
         </div>
       </Row>
       <Row className="mb-5">
-      <div style={{ border: "2px solid black", padding: "10px" }}>
+        <div style={{ border: "2px solid black", padding: "10px" }}>
           <p>
             <a
               className="btn btn-link"
@@ -76,7 +78,7 @@ function DvadesettriDoDvadesetčetiri() {
         </div>
       </Row>
       <Row className="mt-5">
-  <Col xs={12} className="text-center">
+        <Col xs={12} className="text-center">
           <img
             src={`${process.env.PUBLIC_URL}/E logo.png`}
             alt="Erasmus Akreditacija Logo"

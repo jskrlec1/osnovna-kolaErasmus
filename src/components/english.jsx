@@ -6,7 +6,7 @@ function Početnastranica() {
     <Container className="mt-5" style={{ backgroundColor: "lightblue" }}>
       <div>
         <Row className="d-flex flex-column align-items-center text-center">
-          <div>
+        <div className="kretanje">
             <img
               src={`${process.env.PUBLIC_URL}/Logo Erasmus Akreditacija škola.png`}
               alt="Erasmus Akreditacija Logo"
@@ -17,6 +17,8 @@ function Početnastranica() {
             <h1 className="mb-5">
               Elementary School Vladimira Nazora, Vinkovci, Croatia
             </h1>
+            </div>
+            <div className="trenutak-tranzicije">
             <h2 className="mb-4">ERASMUS+ ACCREDITATION</h2>
             <h3 className="mb-5">2023. - 2027.</h3>
           </div>

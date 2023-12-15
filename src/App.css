@@ -1,0 +1,147 @@
+@keyframes kretanje {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(10px); /* Promijenite vrijednost za željeni pomak */
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.kretanje {
+  animation: kretanje 5s ease-in-out infinite; /* Promijenite trajanje i opcije animacije po potrebi */
+}
+@keyframes tranzicija {
+  0% {
+    transform: translateX(-35%);
+  }
+  25% {
+    transform: translateX(35%);
+  }
+  50% {
+    transform: translateX(-35%);
+  }
+  75% {
+    transform: translateX(-0.2%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.trenutak-tranzicije {
+  animation: tranzicija 10s ease-in-out;
+}
+
+/* Dodajte ove stilove u vašu CSS datoteku */
+.button-container {
+  text-align: center; /* Centriranje dugmeta */
+}
+
+.button-container a:hover .shake-button {
+  background-color: red; /* Promjena boje na hoveru */
+  animation: shake 0.5s ease-in-out; /* Animacija podrhtavanja */
+  transform-origin: center;
+  display: inline-block;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(-5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+/* CSS za stiliziranje padajućeg izbornika */
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: transparent; /* Postavljanje pozadine na transparent */
+  min-width: 160px;
+
+  z-index: 1;
+}
+.dropdown-content button {
+  text-decoration: none; /* Uklonite podcrtavanje za dugmad (ako postoji) */
+  display: block;
+}
+.dropdown-content button:hover {
+  background-color: red; /* Promjena boje na hoveru */
+  animation: shake 0.5s ease-in-out; /* Animacija podrhtavanja */
+  transform-origin: center;
+  display: inline-block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* CSS za hover efekte na dugmadima */
+.dropdown-content a:hover {
+ 
+  animation: shake 0.5s ease-in-out; /* Animacija podrhtavanja */
+  transform-origin: center;
+  display: inline-block;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(-5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+/* CSS za okvir oko teksta */
+.custom-heading {
+    border: 1px solid black; /* Okvir crne boje */
+    padding: 10px; /* Dodajte odgovarajući razmak između teksta i okvira */
+    display: inline-block; /* Postavite da okvir obuhvati samo tekst */
+    color: red; /* Unutarnja boja teksta (crvena) */
+    background-color: blue; 
+  }
+
+
+  .lightblue-bg {
+  background-color: lightblue;
+  transition: background-color 2s ease; /* Glatki prelaz u trajanju od 2 sekunde */
+}
+
+.darkblue-bg {
+  background-color: rgb(111, 111, 244);
+  transition: background-color 2s ease;
+}
+
+.yellow-bg {
+  background-color:  lightblue;
+  transition: background-color 2s ease;
+}
+
+  
