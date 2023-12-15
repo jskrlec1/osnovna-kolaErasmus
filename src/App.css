@@ -96,7 +96,6 @@
 
 /* CSS za hover efekte na dugmadima */
 .dropdown-content a:hover {
- 
   animation: shake 0.5s ease-in-out; /* Animacija podrhtavanja */
   transform-origin: center;
   display: inline-block;
@@ -121,27 +120,34 @@
 }
 /* CSS za okvir oko teksta */
 .custom-heading {
-    border: 1px solid black; /* Okvir crne boje */
-    padding: 10px; /* Dodajte odgovarajući razmak između teksta i okvira */
-    display: inline-block; /* Postavite da okvir obuhvati samo tekst */
-    color: red; /* Unutarnja boja teksta (crvena) */
-    background-color: blue; 
-  }
-
-
-  .lightblue-bg {
+  border: 1px solid black; /* Okvir crne boje */
+  padding: 10px; /* Dodajte odgovarajući razmak između teksta i okvira */
+  display: inline-block; /* Postavite da okvir obuhvati samo tekst */
+  color: red; /* Unutarnja boja teksta (crvena) */
   background-color: lightblue;
+}
+
+.lightblue-bg {
+  background-color: white;
   transition: background-color 2s ease; /* Glatki prelaz u trajanju od 2 sekunde */
 }
 
 .darkblue-bg {
-  background-color: rgb(111, 111, 244);
+  background-color: lightgoldenrodyellow;
   transition: background-color 2s ease;
 }
 
 .yellow-bg {
-  background-color:  lightblue;
+  background-color: white;
   transition: background-color 2s ease;
 }
 
-  
+@import url("https://fonts.googleapis.com/css2?family=Mina:wght@700&display=swap");
+.custom-fonta {
+  font-family: "Mina", sans-serif;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Unbounded&display=swap");
+.custom-font {
+  font-family: "Unbounded", sans-serif;
+}
