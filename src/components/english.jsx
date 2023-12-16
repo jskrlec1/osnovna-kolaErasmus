@@ -181,14 +181,14 @@ function Početnastranica() {
               </li>
               <li>Tatjana Brešćanski - Mathematics teacher</li>
               <li>Gabrijela Romić - English language teacher</li>
-              <li>Marija Rukavina - English language teacherleskog jezika</li>
+              <li>Marija Rukavina - English language teacher</li>
               <li>Julija Dujić - Music Education teacher</li>
               <li>Danijela Kuveždić - Religious Education teacher</li>
-              <li>Ivan Krajinović - Croatian Language and History teacher</li>
+              <li>Ivan Krajinović - Croatian language and History teacher</li>
 
               <li>Adrijan Čačić - ICT and Physics teacher</li>
               <li>Iva Muškić - Fine Arts teacher</li>
-              <li>Maja Štefanac - Primary Education and Informatics teacher</li>
+              <li>Maja Štefanac - Primary Education and ICT</li>
 
               <li>Dajana Jozanović - Primary Education teacher</li>
             </ul>
