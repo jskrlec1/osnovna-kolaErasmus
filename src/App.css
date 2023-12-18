@@ -13,26 +13,72 @@
 .kretanje {
   animation: kretanje 5s ease-in-out infinite; /* Promijenite trajanje i opcije animacije po potrebi */
 }
+
+/*erasmus+ akreditacija*/
 @keyframes tranzicija {
   0% {
-    transform: translateX(-35%);
+    transform: translateX(-100%);
   }
   25% {
-    transform: translateX(35%);
+    transform: translateX(-50%);
   }
   50% {
-    transform: translateX(-35%);
+    transform: translateX(-20%);
   }
   75% {
-    transform: translateX(-0.2%);
+    transform: translateX(-5%);
   }
   100% {
     transform: translateX(0);
   }
 }
 
+@keyframes tranzicijet {
+  0% {
+    transform: translateY(-535%);
+  }
+  25% {
+    transform: translateY(-35%);
+  }
+  50% {
+    transform: translateY(-0.1%);
+  }
+  75% {
+    transform: translateY(-0.1%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes tranzicijee {
+  0% {
+    transform: translateY(535%);
+  }
+  25% {
+    transform: translateY(35%);
+  }
+  50% {
+    transform: translateY(0.1%);
+  }
+  75% {
+    transform: translateY(0.1%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.trenutak-tranzicijet {
+  animation: tranzicijet 6s linear;
+}
+
+.trenutak-tranzicijee {
+  animation: tranzicijee 6s linear;
+}
+
 .trenutak-tranzicije {
-  animation: tranzicija 10s ease-in-out;
+  animation: tranzicija 3s linear;
 }
 
 /* Dodajte ove stilove u vašu CSS datoteku */

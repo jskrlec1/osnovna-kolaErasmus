@@ -34,18 +34,25 @@ function Početnastranica() {
               style={{ maxWidth: "20%", height: "auto" }}
             />
           </div>
-          <div style={{ backgroundColor: "lightskyblue" }}>
-            <h1 className="mb-5  custom-fonta" style={{ color: "darkred" }}>
+          <div
+            className="trenutak-tranzicijet"
+            style={{ backgroundColor: "lightskyblue", color: "darkred" }}
+          >
+            <h1 className="mb-4 red-text custom-fonta">
               Osnovna škola Vladimira Nazora, Vinkovci
             </h1>
           </div>
-
           <div
             className="trenutak-tranzicije"
             style={{ backgroundColor: "lightskyblue", color: "darkred" }}
           >
-            <h1 className="mb-4 red-text custom-font">ERASMUS+ AKREDITACIJA</h1>
-            <h2 className="mb-5 red-text custom-font">2023. - 2027.</h2>
+            <h1 className="mb-4 red-text custom-font">ERASMUS+ AKREDITACIJA</h1>{" "}
+          </div>
+          <div
+            className="trenutak-tranzicijee"
+            style={{ backgroundColor: "lightskyblue", color: "darkred" }}
+          >
+            <h2 className="mb-5 red-text custom-font">2023. - 2027.</h2>{" "}
           </div>
 
           <div className="button-container">
