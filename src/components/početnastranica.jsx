@@ -29,7 +29,7 @@ function Početnastranica() {
         <Row className="d-flex flex-column align-items-center text-center">
           <div className="kretanje">
             <img
-              src={`${process.env.PUBLIC_URL}/Logo Erasmus Akreditacija škola.png`}
+              src={`${process.env.PUBLIC_URL}/Logo_Erasmus_Transparent_Background.png`}
               alt="Erasmus Akreditacija Logo"
               style={{ maxWidth: "20%", height: "auto" }}
             />

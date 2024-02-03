@@ -9,7 +9,7 @@ function DvadesetšestDoDvadesetsedam() {
         <div className="kretanje">
           <h1>2026. - 2027.</h1>
           <img
-            src={`${process.env.PUBLIC_URL}/Logo Erasmus Akreditacija škola.png`}
+            src={`${process.env.PUBLIC_URL}/Logo_Erasmus_Transparent_Background.png`}
             alt="Erasmus Akreditacija Logo"
             style={{ maxWidth: "20%", height: "auto" }}
           />
