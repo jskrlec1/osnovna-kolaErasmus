@@ -14,73 +14,6 @@
   animation: kretanje 5s ease-in-out infinite; /* Promijenite trajanje i opcije animacije po potrebi */
 }
 
-/*erasmus+ akreditacija*/
-@keyframes tranzicija {
-  0% {
-    transform: translateX(-100%);
-  }
-  25% {
-    transform: translateX(-50%);
-  }
-  50% {
-    transform: translateX(-20%);
-  }
-  75% {
-    transform: translateX(-5%);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-
-@keyframes tranzicijet {
-  0% {
-    transform: translateY(-535%);
-  }
-  25% {
-    transform: translateY(-35%);
-  }
-  50% {
-    transform: translateY(-0.1%);
-  }
-  75% {
-    transform: translateY(-0.1%);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-
-@keyframes tranzicijee {
-  0% {
-    transform: translateY(535%);
-  }
-  25% {
-    transform: translateY(35%);
-  }
-  50% {
-    transform: translateY(0.1%);
-  }
-  75% {
-    transform: translateY(0.1%);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-
-.trenutak-tranzicijet {
-  animation: tranzicijet 6s linear;
-}
-
-.trenutak-tranzicijee {
-  animation: tranzicijee 6s linear;
-}
-
-.trenutak-tranzicije {
-  animation: tranzicija 3s linear;
-}
-
 /* Dodajte ove stilove u vašu CSS datoteku */
 .button-container {
   text-align: center; /* Centriranje dugmeta */
@@ -113,7 +46,7 @@
 /* CSS za stiliziranje padajućeg izbornika */
 
 .dropdown {
-  position: relative;
+  position: absolute;
   display: inline-block;
 }
 
@@ -122,12 +55,12 @@
   position: absolute;
   background-color: transparent; /* Postavljanje pozadine na transparent */
   min-width: 160px;
-
   z-index: 1;
 }
 .dropdown-content button {
   text-decoration: none; /* Uklonite podcrtavanje za dugmad (ako postoji) */
   display: block;
+  margin-bottom: 2px;
 }
 .dropdown-content button:hover {
   background-color: red; /* Promjena boje na hoveru */
@@ -145,6 +78,11 @@
   animation: shake 0.5s ease-in-out; /* Animacija podrhtavanja */
   transform-origin: center;
   display: inline-block;
+}
+@media (max-width: 768px) {
+  .dropdown-content button {
+    padding: 5px; /* Prilagodba veličine za male ekrane */
+  }
 }
 
 @keyframes shake {
@@ -197,3 +135,30 @@
 .custom-font {
   font-family: "Unbounded", sans-serif;
 }
+
+/*privremeno dugme u komponentama za godine*/
+.centered-container1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Ovo postavlja visinu kontejnera na 100% viewport height (vh), što znači da će zauzeti cijelu visinu ekrana */
+  text-align: center; /* Centrira tekst unutar div-a */
+}
+
+.button-container1 {
+  margin-top: 20px; /* Dodaje razmak iznad dugmeta */
+}
+
+.container-relative {
+  position: relative;
+}
+
+.english-flag-top-right {
+  position: absolute;
+  top: 4px; /* Prilagodite prema potrebi */
+  right: 5px; /* Prilagodite prema potrebi */
+  width: 80px; /* Prilagodite širinu slike */
+  height: auto; /* Zadržite originalni omjer slike */
+}
+

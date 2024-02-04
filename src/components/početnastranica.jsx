@@ -22,50 +22,11 @@ function Početnastranica() {
 
   return (
     <Container
-      className={`mt-5 ${bgClass}`}
+      className={`mt-2 ${bgClass} container-relative`}
       style={{ border: "1px solid black" }}
     >
-      <div>
-        <Row className="d-flex flex-column align-items-center text-center">
-          <div className="kretanje">
-            <img
-              src={`${process.env.PUBLIC_URL}/Logo_Erasmus_Transparent_Background.png`}
-              alt="Erasmus Akreditacija Logo"
-              style={{ maxWidth: "20%", height: "auto" }}
-            />
-          </div>
-          <div
-            className="trenutak-tranzicijet"
-            style={{ backgroundColor: "lightskyblue", color: "darkred" }}
-          >
-            <h1 className="mb-4 red-text custom-fonta">
-              Osnovna škola Vladimira Nazora, Vinkovci
-            </h1>
-          </div>
-          <div
-            className="trenutak-tranzicije"
-            style={{ backgroundColor: "lightskyblue", color: "darkred" }}
-          >
-            <h1 className="mb-4 red-text custom-font">ERASMUS+ AKREDITACIJA</h1>{" "}
-          </div>
-          <div
-            className="trenutak-tranzicijee"
-            style={{ backgroundColor: "lightskyblue", color: "darkred" }}
-          >
-            <h2 className="mb-5 red-text custom-font">2023. - 2027.</h2>{" "}
-          </div>
-
-          <div className="button-container">
-            <Link to="/english">
-              <Button className="shake-button" variant="primary">
-                English
-              </Button>
-            </Link>
-          </div>
-        </Row>
-      </div>
-      <div className="dropdown">
-        <h4 className="mt-5 custom-heading">
+      <div className="dropdown mb-3">
+        <h4 className="mt-1 custom-heading">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="40"
@@ -81,43 +42,67 @@ function Početnastranica() {
 
         <div className="dropdown-content">
           <Link to="/2023-2024">
-            <Button
-              variant="primary"
-              className="mb-2 d-block"
-              style={{ textDecoration: "none" }}
-            >
+            <Button variant="primary" style={{ textDecoration: "none" }}>
               2023-2024
             </Button>
           </Link>
           <Link to="/2024-2025">
-            <Button
-              variant="info"
-              className="mb-2 d-block"
-              style={{ textDecoration: "none" }}
-            >
+            <Button variant="info" style={{ textDecoration: "none" }}>
               2024-2025
             </Button>
           </Link>
           <Link to="/2025-2026">
-            <Button
-              variant="warning"
-              className="mb-2 d-block"
-              style={{ textDecoration: "none" }}
-            >
+            <Button variant="warning" style={{ textDecoration: "none" }}>
               2025-2026
             </Button>
           </Link>
           <Link to="/2026-2027">
-            <Button
-              variant="success"
-              className="mb-2 d-block"
-              style={{ textDecoration: "none" }}
-            >
+            <Button variant="success" style={{ textDecoration: "none" }}>
               2026-2027
             </Button>
           </Link>
         </div>
       </div>
+      <Link to="/english">
+        <img
+          src={`${process.env.PUBLIC_URL}/british_flag.png`}
+          alt="English"
+          className="english-flag-top-right"
+        />
+      </Link>
+      <div>
+        <Row className="d-flex flex-column align-items-center text-center">
+          <div className="kretanje">
+            <img
+              src={`${process.env.PUBLIC_URL}/Logo_Erasmus_Transparent_Background.png`}
+              alt="Erasmus Akreditacija Logo"
+              style={{ maxWidth: "20%", height: "auto" }}
+            />
+          </div>
+
+          <div
+            className="mt-5"
+            style={{ backgroundColor: "lightskyblue", color: "darkred" }}
+          >
+            <h1 className="mb-4 red-text custom-fonta">
+              Osnovna škola Vladimira Nazora, Vinkovci
+            </h1>
+          </div>
+          <div
+            
+            style={{ backgroundColor: "lightskyblue", color: "darkred" }}
+          >
+            <h1 className="mb-4 red-text custom-font">ERASMUS+ AKREDITACIJA</h1>{" "}
+          </div>
+          <div
+            
+            style={{ backgroundColor: "lightskyblue", color: "darkred" }}
+          >
+            <h2 className="mb-5 red-text custom-font">2023. - 2027.</h2>{" "}
+          </div>
+        </Row>
+      </div>
+
       <div
         style={{
           border: "2px solid black",

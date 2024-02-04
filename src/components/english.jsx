@@ -1,5 +1,7 @@
-import { Container, Row, Col } from "react-bootstrap";
+
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import { Container, Row, Col, Button } from "react-bootstrap";
 import "../App.css";
 
 function Početnastranica() {
@@ -50,6 +52,13 @@ function Početnastranica() {
           </div>
         </Row>
       </div>
+      <div className="button-container mt-3 mb-3">
+          <Link to="/">
+            <Button className="shake-button" variant="primary">
+              Croatian
+            </Button>
+          </Link>
+        </div>
 
       <div
         style={{
